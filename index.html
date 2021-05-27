@@ -5,11 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="weathericon.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
+        <div class="weather-widget-control-panel">
+            <h1>Write your location</h1>
+            <form class="weather-widget-form">
+                <input type="text" class="weather-widget-form__input city">
+                <input type="text" class="weather-widget-form__input country">
+                <button class="weather-form_button" >Receive weather</button>
+            </form>
+        </div>
         <div class="weather-widget-container">
             <div class="weather-widget-icon">
                 

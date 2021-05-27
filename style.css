@@ -4,6 +4,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -12,7 +16,8 @@
           align-items: center;
 }
 
-.container .weather-widget-container {
+.container .weather-widget-control-panel {
+  font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,9 +29,60 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -webkit-box-flex: 0.150;
-      -ms-flex: 0.150;
-          flex: 0.150;
+  background-color: #191970;
+  padding: 15px;
+  border-radius: 1em;
+  margin: 1em;
+}
+
+.container .weather-widget-control-panel .weather-widget-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .weather-widget-control-panel .weather-widget-form .weather-widget-form__input {
+  color: #ffffff;
+  background-color: #87ceeb !important;
+  border-radius: 1em;
+  font-size: 20px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.container .weather-widget-control-panel .weather-widget-form .weather-widget-form__input:not(:first-child) {
+  margin-top: 10px;
+}
+
+.container .weather-widget-control-panel .weather-widget-form .weather-form_button {
+  color: #ffffff;
+  background-color: #1A4314 !important;
+  border-radius: 1em;
+  font-size: 20px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid gray;
+  margin-top: 15px;
+}
+
+.container .weather-widget-container {
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   font-size: 32px;
   background-color: #191970;
   padding: 15px;

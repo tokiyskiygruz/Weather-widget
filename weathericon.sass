@@ -1,0 +1,173 @@
+@import "compass/css3"
+
+@import "https://fonts.googleapis.com/css?family=Lato:300,400,900"
+
+
+
+
+
+
+//  COLORS
+//=====================================
+
+$body: #1b1b1c
+
+// Status
+$status-bg: #808080
+$status-color: #FFF
+
+// Night
+$night-bg: #000
+$night-moon: #fff
+$night-moon-shadow: rgba(0, 0, 0, 0.2)
+$night-star: #fff
+$night-star-shadow: rgba(255, 255, 255, 0.1)
+
+// Rain
+$rain-bg: #41ba9c
+$rain-cloud: #ccc
+$rain-shadow: #000
+$rain-drop: blue
+
+//Snow
+$snow-bg: #ccd1d9
+$snow-cloud: #fff
+$snow-shadow: #000
+$snow-flake: #eee
+$snow-flake-alt: rgba(238, 238, 238, 0)
+
+//Storm
+$storm-bg: #656d78
+$storm-cloud: #393939
+$storm-shadow: #000
+$storm-lightning: yellow
+$storm-lightning-shadow: rgba(255, 258, 0, 0.4)
+
+//Sunny
+$sunny-bg: #4fc1e9
+$sunny-sun: #ffe400
+$sunny-sun-sun: rgba(255, 255, 0, 0.2)
+$sunny-sun-outer: #ffe400
+$sunny-sun-outer-shadow: rgba(255, 255, 0, 0.1)
+$sunny-sun-inner: #ffee44
+$sunny-sun-inner-shadow: rgba(255, 255, 0, 1)
+$sunny-shadow: #000
+
+
+$yellow_20: rgba(255, 255, 0, 0.2)
+$yellow_10: rgba(255, 255, 0, 0.1)
+$white: #ffffff
+$white_10: rgba(255, 255, 255, 0.1)
+$color_gallery_approx: #eeeeee
+$blue:  blue
+$color_masala_approx: #3c3b3d
+$color_picton_blue_approx: #4fc1e9
+$color_mischka_approx: #ccd1d9
+$black: #000
+$color_nevada_approx: #656d78
+$color_keppel_approx: #41ba9c
+$gray: #808080
+$color_turbo_approx: #ffe400
+$color_gorse_approx: #ffee44
+$yellow_100: rgba(255, 255, 0, 1)
+$black_20: rgba(0, 0, 0, 0.2)
+$color_tuatara_approx: #393939
+$yellow:  yellow
+$color_yellow_40_approx: rgba(255, 258, 0, 0.4)
+$color_celeste_approx: #cccccc
+
+
+
+
+
+
+//  WEATHER COMPONENTS
+//=====================================
+
+// Night components
+$night-component: $night-star 26px 7px 0 -1px, $night-star-shadow -36px -19px 0 -1px, 
+$night-star-shadow -51px -34px 0 -1px, $night-star -52px -62px 0 -1px, $night-star 14px -37px, 
+$night-star-shadow 41px -19px, $night-star 34px -50px, $night-star-shadow 14px -71px 0 -1px, 
+$night-star 64px -21px 0 -1px, $night-star-shadow 32px -85px 0 -1px, $night-star 64px -90px, 
+$night-star-shadow 60px -67px 0 -1px, $night-star 34px -127px, 
+$night-star-shadow -26px -103px 0 -1px
+
+$night-component-animated: 
+$white_10 26px 7px 0 -1px, $white -36px -19px 0 -1px, 
+$white -51px -34px 0 -1px, $white_10 -52px -62px 0 -1px, 
+$white_10 14px -37px, $white 41px -19px, $white_10 34px -50px, 
+$white 14px -71px 0 -1px, $white_10 64px -21px 0 -1px, $white 32px -85px 0 -1px, 
+$white_10 64px -90px, $white 60px -67px 0 -1px, $white_10 34px -127px, 
+$white -26px -103px 0 -1px
+
+$night-component-before: $night-moon -35px 0
+
+$night-component-after: $night-moon-shadow -5px 0 0
+
+// Rain components
+$rain-component: $rain-cloud 65px -25px 0 -5px, $rain-cloud 25px -25px, $rain-cloud 5px 0 0 2px, $rain-cloud 10px 0 0 2px, $rain-cloud 15px 0 0 2px, $rain-cloud 20px 0 0 2px, $rain-cloud 25px 0 0 2px, $rain-cloud 30px 0 0 2px, $rain-cloud 35px 0 0 2px, $rain-cloud 40px 0 0 2px, $rain-cloud 45px 0 0 2px, $rain-cloud 50px 0 0 2px, $rain-cloud 55px 0 0 2px, $rain-cloud 60px 0 0 2px, $rain-cloud 65px 0 0 2px, $rain-cloud 70px 0 0 2px, $rain-cloud 75px 0 0 2px
+
+$rain-drops-1: rgba(0, 0, 0, 0) 30px 30px, rgba(0, 0, 0, 0) 40px 40px, $rain-drop 50px 75px, $rain-drop 55px 50px, $rain-drop 70px 100px, $rain-drop 80px 95px, $rain-drop 110px 45px, $rain-drop 90px 35px
+
+$rain-drops-2:  $rain-drop 30px 45px, $rain-drop 40px 60px, $rain-drop 50px 90px, $rain-drop 55px 65px, rgba(0, 0, 0, 0) 70px 120px, rgba(0, 0, 0, 0) 80px 120px, $rain-drop 110px 70px, $rain-drop 90px 60px
+
+$rain-drops-3: $rain-drop 30px 45px, $rain-drop 40px 60px, $rain-drop 50px 90px, $rain-drop 55px 65px, rgba(0, 0, 0, 0) 70px 40px, rgba(0, 0, 0, 0) 80px 20px, $rain-drop 110px 70px, $rain-drop 90px 60px
+
+$rain-drops-4: $rain-drop 30px 70px, $rain-drop 40px 80px, rgba(0, 0, 0, 0) 50px 100px, $rain-drop 55px 80px, $rain-drop 70px 60px, $rain-drop 80px 45px, $rain-drop 110px 95px, $rain-drop 90px 85px
+
+$rain-drops-5: $rain-drop 30px 70px, $rain-drop 40px 80px, rgba(0, 0, 0, 0) 50px 45px, $rain-drop 55px 80px, $rain-drop 70px 60px, $rain-drop 80px 45px, $rain-drop 110px 95px, $rain-drop 90px 85px
+
+$rain-drops-6: $rain-drop 30px 95px, $rain-drop 40px 100px, $rain-drop 50px 60px, rgba(0, 0, 0, 0) 55px 95px, $rain-drop 70px 80px, $rain-drop 80px 70px, rgba(0, 0, 0, 0) 110px 120px, rgba(0, 0, 0, 0) 90px 110px
+
+$rain-drops-7: $rain-drop 30px 95px, $rain-drop 40px 100px, $rain-drop 50px 60px, rgba(0, 0, 0, 0) 55px 35px, $rain-drop 70px 80px, $rain-drop 80px 70px, rgba(0, 0, 0, 0) 110px 25px, rgba(0, 0, 0, 0) 90px 15px
+
+$rain-drops-8: rgba(0, 0, 0, 0) 30px 120px, rgba(0, 0, 0, 0) 40px 120px, $rain-drop 50px 75px, $rain-drop 55px 50px, $rain-drop 70px 100px, $rain-drop 80px 95px, $rain-drop 110px 45px, $rain-drop 90px 35px
+
+// Snow components
+$snow-component: $snow-cloud 65px -25px 0 -5px, $snow-cloud 25px -25px, $snow-cloud 5px 0 0 2px, $snow-cloud 10px 0 0 2px, $snow-cloud 15px 0 0 2px, $snow-cloud 20px 0 0 2px, $snow-cloud 25px 0 0 2px, $snow-cloud 30px 0 0 2px, $snow-cloud 35px 0 0 2px, $snow-cloud 40px 0 0 2px, $snow-cloud 45px 0 0 2px, $snow-cloud 50px 0 0 2px, $snow-cloud 55px 0 0 2px, $snow-cloud 60px 0 0 2px, $snow-cloud 65px 0 0 2px, $snow-cloud 70px 0 0 2px, $snow-cloud 75px 0 0 2px
+
+$snow-flakes-1: $snow-flake-alt 30px 30px, $snow-flake-alt 40px 40px, $snow-flake 50px 75px, $snow-flake 55px 50px, $snow-flake 70px 100px, $snow-flake 80px 95px, $snow-flake 110px 45px, $snow-flake 90px 35px
+
+$snow-flakes-2: $snow-flake 30px 45px, $snow-flake 40px 60px, $snow-flake 50px 90px, $snow-flake 55px 65px, $snow-flake-alt 70px 120px, $snow-flake-alt 80px 120px, $snow-flake 110px 70px, $snow-flake 90px 60px
+
+$snow-flakes-3: $snow-flake 30px 45px, $snow-flake 40px 60px, $snow-flake 50px 90px, $snow-flake 55px 65px, $snow-flake-alt 70px 40px, $snow-flake-alt 80px 20px, $snow-flake 110px 70px, $snow-flake 90px 60px
+
+$snow-flakes-4: $snow-flake 30px 70px, $snow-flake 40px 80px, $snow-flake-alt 50px 100px, $snow-flake 55px 80px, $snow-flake 70px 60px, $snow-flake 80px 45px, $snow-flake 110px 95px, $snow-flake 90px 85px
+
+$snow-flakes-5: $snow-flake 30px 70px, $snow-flake 40px 80px, $snow-flake-alt 50px 45px, $snow-flake 55px 80px, $snow-flake 70px 60px, $snow-flake 80px 45px, $snow-flake 110px 95px, $snow-flake 90px 85px
+
+$snow-flakes-6:  $snow-flake 30px 95px, $snow-flake 40px 100px, $snow-flake 50px 60px, $snow-flake-alt 55px 95px, $snow-flake 70px 80px, $snow-flake 80px 70px, $snow-flake-alt 110px 120px, $snow-flake-alt 90px 110px
+
+$snow-flakes-7: $snow-flake 30px 95px, $snow-flake 40px 100px, $snow-flake 50px 60px, $snow-flake-alt 55px 35px, $snow-flake 70px 80px, $snow-flake 80px 70px, $snow-flake-alt 110px 25px, $snow-flake-alt 90px 15px
+
+$snow-flakes-8: $snow-flake-alt 30px 120px, $snow-flake-alt 40px 120px, $snow-flake 50px 75px, $snow-flake 55px 50px, $snow-flake 70px 100px, $snow-flake 80px 95px, $snow-flake 110px 45px, $snow-flake 90px 35px
+
+// Storm components
+$storm-component: $storm-cloud 65px -25px 0 -5px, $storm-cloud 25px -25px, $storm-cloud 5px 0 0 2px, $storm-cloud 10px 0 0 2px, $storm-cloud 15px 0 0 2px, $storm-cloud 20px 0 0 2px, $storm-cloud 25px 0 0 2px, $storm-cloud 30px 0 0 2px, $storm-cloud 35px 0 0 2px, $storm-cloud 40px 0 0 2px, $storm-cloud 45px 0 0 2px, $storm-cloud 50px 0 0 2px, $color_tuatara_approx 55px 0 0 2px, $storm-cloud 60px 0 0 2px, $storm-cloud 65px 0 0 2px, $storm-cloud 70px 0 0 2px, $storm-cloud 75px 0 0 2px
+
+$storm-component-before: $storm-lightning -2px -30px, $storm-lightning-shadow -2px -30px 10px
+
+// Sunny components
+$sunny-component: $sunny-sun-outer-shadow 0 0 5px 5px
+
+$sunny-component-before: $sunny-sun-inner-shadow 0 0 5px 1px
+
+$sunny-component-sun: $sunny-sun-sun 0 0 5px 15px
+
+$sunny-component-glow: $sunny-sun-outer-shadow 0 0 5px 10px
+
+
+//   GLOBAL
+//=====================================
+
+* 
+  +box-sizing(border-box)
+  &:before, &:after 
+    +box-sizing(border-box)
+
+body 
+  line-height: 1
+  font-family: Lato, sans-serif
+  background-color: $body
+  font-size: 100%
+  vertical-align: baseline
