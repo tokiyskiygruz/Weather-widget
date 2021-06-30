@@ -1,0 +1,73 @@
+$weather-widget-color: #191970
+$text-color: #ffffff
+$input-background: #87ceeb
+$button-color: #1A4314
+.container
+    color: $text-color
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center 
+    .weather-widget-control-panel
+        font-size: 16px
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        background-color: $weather-widget-color
+        padding: 15px
+        border-radius: 1em
+        margin: 1em
+        .weather-widget-form
+            display: flex
+            flex-direction: column     
+            .weather-widget-form__input
+                color: $text-color
+                background-color: $input-background !important
+                border-radius: 1em
+                font-size: 20px
+                padding: 10px
+                background-color: white
+                border: 1px solid gray
+                &:not(:first-child)
+                    margin-top: 10px
+            .weather-form_button
+                color: $text-color
+                background-color: $button-color !important
+                border-radius: 1em
+                font-size: 20px
+                padding: 10px
+                background-color: white
+                border: 1px solid gray
+                margin-top: 15px
+            
+    .weather-widget-container
+        visibility: hidden
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        font-size: 32px
+        background-color: $weather-widget-color
+        padding: 15px
+        border-radius: 1em
+        & > div
+            margin-top: 15px
+            padding: 10px
+        .weather-widget-description
+            border-top: 2px dotted white
+            width: 100%
+        .wether-widget-location
+            border-top: 2px dotted white
+            width: 100%
+        .weather-widget-temperature
+            border-top: 2px dotted white
+            width: 100%
+
+            
+            
+
+
+
+            

@@ -1,0 +1,111 @@
+.container {
+  color: #ffffff;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .weather-widget-control-panel {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #191970;
+  padding: 15px;
+  border-radius: 1em;
+  margin: 1em;
+}
+
+.container .weather-widget-control-panel .weather-widget-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .weather-widget-control-panel .weather-widget-form .weather-widget-form__input {
+  color: #ffffff;
+  background-color: #87ceeb !important;
+  border-radius: 1em;
+  font-size: 20px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.container .weather-widget-control-panel .weather-widget-form .weather-widget-form__input:not(:first-child) {
+  margin-top: 10px;
+}
+
+.container .weather-widget-control-panel .weather-widget-form .weather-form_button {
+  color: #ffffff;
+  background-color: #1A4314 !important;
+  border-radius: 1em;
+  font-size: 20px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid gray;
+  margin-top: 15px;
+}
+
+.container .weather-widget-container {
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 32px;
+  background-color: #191970;
+  padding: 15px;
+  border-radius: 1em;
+}
+
+.container .weather-widget-container > div {
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.container .weather-widget-container .weather-widget-description {
+  border-top: 2px dotted white;
+  width: 100%;
+}
+
+.container .weather-widget-container .wether-widget-location {
+  border-top: 2px dotted white;
+  width: 100%;
+}
+
+.container .weather-widget-container .weather-widget-temperature {
+  border-top: 2px dotted white;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
